@@ -139,6 +139,7 @@ main {
 .gray__container img {
     width: 364px;
     display: flex;
+    justify-self: center;
     border-radius: 32px 32px 32px 32px;
 }
 
