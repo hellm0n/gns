@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: ComicSansMS, 'Comic Sans MS';
+        font-size: 99.03px;
+      }
+
+      .cls-2 {
+        fill: #ff00ed;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="cls-2" cx="128" cy="128" r="122"/>
+    <path class="cls-3" d="m128,10.5c31.39,0,60.89,12.22,83.09,34.41,22.19,22.19,34.41,51.7,34.41,83.09s-12.22,60.89-34.41,83.09c-22.19,22.19-51.7,34.41-83.09,34.41s-60.89-12.22-83.09-34.41c-22.19-22.19-34.41-51.7-34.41-83.09s12.22-60.89,34.41-83.09c22.19-22.19,51.7-34.41,83.09-34.41m0-9C58.14,1.5,1.5,58.14,1.5,128s56.64,126.5,126.5,126.5,126.5-56.64,126.5-126.5S197.86,1.5,128,1.5h0Z"/>
+  </g>
+  <text class="cls-1" transform="translate(22.07 163.09)"><tspan x="0" y="0">WIP</tspan></text>
+</svg>
