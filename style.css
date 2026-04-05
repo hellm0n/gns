@@ -12,14 +12,16 @@
 
 body {
     background-color: #121212;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .header {
     background-image: url("images/top-header.png");
+    background: #1a237e;
     background-size: cover;
-    padding: 24px 0;
-    margin: 24px 82px;
-    border-radius: 32px 32px 32px 32px;
+    padding: 10px 0;
+    margin: 24px 82px 0px 82px;
+    border-radius: 32px;
 }
 
 .header__container {
@@ -39,12 +41,13 @@ li {
 
 a {
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__title-link {
     font-weight: 700;
     color: var(--light);
-    font-size: 36px;
+    font-size: 42px;
     text-align: center;
 }
 
@@ -55,17 +58,33 @@ a {
 
 footer {
     background-color: #313131;
-    margin: 22px 20px 20px 20px;
-    padding: 32px 12px;
+    padding: 16px 12px;
     border-radius: 32px 32px 32px 32px;
+    max-width: 1169px;
+    margin-inline: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .footer__container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__container span {
     color: #ffffff;
     margin: 0 16px;
     font-size: 24px;
+    font-weight: 700;
+}
+
+.footer__container a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
     font-weight: 700;
 }
 /*header-footer end*/
@@ -79,10 +98,17 @@ main {
 .hero__track-list {
     padding-top: 12px;
     display: grid;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 24px;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, auto); 
+    justify-content: center;
+}
+
+.hero__album-list {
+    padding-top: 12px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, 196); 
+    justify-content: center; 
 }
 
 .hero__track-card {
@@ -100,7 +126,15 @@ main {
     font-size: 180%;
     font-weight: 700;
     text-align: center;
-    color: #ffffff;
+    color: white;
+}
+
+.hero__section-title {
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 36px;
 }
 
 .track-card__track-autors {
@@ -110,7 +144,11 @@ main {
 
 @media (max-width: 1000px) {
     .hero__track-list {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(1, auto); 
+    }
+
+    .hero__album-list {
+        grid-template-columns: repeat(1, auto); 
     }
 
     .hero__track-card img {
@@ -120,7 +158,11 @@ main {
     .header {
         margin: 20px 20px;
         padding: 10px 0;
-        background-size: 250%;
+        background-size: 100% 200%;
+    }
+
+    footer {
+        margin: 20px 20px;
     }
 }
 /*Home end*/
@@ -153,19 +195,21 @@ main {
     font-weight: 700;
     font-size: 36px;
     margin-top: 10px;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
 }
 
 .album__autor {
     color: var(--autor-color);
     font-weight: 700;
     font-size: 28px;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
 }
 
 .album__track-list {
     display: flex;
     flex-direction: column;
     margin: 20px 0 0 0;
-    gap: 10px;
+    gap: 12px;
 }
 
 .track-list__track-link {
@@ -175,14 +219,19 @@ main {
     background-color: #121212;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 12px;
     border-radius: 16px 16px 16px 16px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+.track-list__track-link:active {
+    background-color: #424242;
 }
 
 .track-list__track-title {
     color: white;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .track-list__track-autors {
@@ -222,6 +271,10 @@ main {
     font-size: 36px;
     display: flex;
     justify-content: center;
+}
+
+.track-info__album:active {
+    color: rgb(74, 102, 116);
 }
 
 .track__line {
